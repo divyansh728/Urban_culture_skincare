@@ -136,11 +136,7 @@ class _UploadFileState extends State<UploadFile> {
       bottomNavigationBar: BottomNavigationBar(
         onTap: (value) {
           if (value == 0) {
-            Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) {
-                return SkincareRoutinePage();
-              },
-            ));
+            Navigator.of(context).pop();
           }
           debugPrint("valdv${value}");
         },
